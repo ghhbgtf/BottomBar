@@ -1,0 +1,1 @@
+include ':app', ':appactionbar_v7', ':wechatsample'

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always|collapseActionView"
+        android:title="search" />
+
+    <item
+        android:id="@+id/menu_item_share"
+        android:showAsAction="always"
+        android:title="share" />
+
+    <item
+        android:id="@+id/menu_item_1"
+        android:icon="@drawable/ic_launcher_true"
+        android:showAsAction="never"
+        android:title="选项1" />
+
+
+</menu>

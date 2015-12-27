@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    menu 分为三部分:
+    1. 搜索 widget
+    2. "+"菜单,通过自定义 actionProvider widget 实现模拟下拉功能
+    3. optionmenu ,上下文菜单-->
+
+    <item
+        android:id="@+id/menu_item_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/actionbar_search_icon"
+        android:showAsAction="always"
+        android:title="搜索" />
+
+    <item
+        android:id="@+id/menu_item_add"
+        android:actionProviderClass="com.example.atlas.wechatsample.MyActionProvider"
+        android:icon="@drawable/actionbar_add_icon"
+        android:showAsAction="always"
+        android:title="ADD" />
+
+    <group>
+
+        <item
+            android:id="@+id/menu_item_photo"
+            android:icon="@drawable/ofm_photo_icon"
+            android:title="我的相册" />
+        <item
+            android:id="@+id/menu_item_collection"
+            android:icon="@drawable/ofm_collect_icon"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/menu_item_card"
+            android:icon="@drawable/ofm_card_icon"
+            android:title="我的银行卡" />
+        <item
+            android:id="@+id/menu_item_setting"
+            android:icon="@drawable/ofm_setting_icon"
+            android:title="设置"
+            />
+        <item
+            android:id="@+id/menu_item_feedback"
+            android:icon="@drawable/ofm_feedback_icon"
+            android:title="反馈" />
+
+    </group>
+
+</menu>
